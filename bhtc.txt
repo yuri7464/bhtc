@@ -1,0 +1,40 @@
+programa
+{
+   
+    funcao inicio()
+    {
+    inteiro opcao
+    real valor=1.000, soma,saque, deposito
+        escreva("BANCO\n")
+        escreva("1) SAQUE \n")
+        escreva("2) DEPOSITO \n")
+ 
+
+        escreva("Informe a opção que Deseja ")
+        leia (opcao)
+
+        limpa()
+    
+
+        escolha (opcao)
+        {
+            caso 1:
+            escreva("Informe o valor do saque :")
+            leia (saque)
+            soma=valor-saque
+            escreva("Valor total é:" , soma,"\n")
+           
+            pare
+            caso 2:
+            escreva("Informe o valor do  deposito:")
+            leia (deposito)
+            soma=valor+deposito
+            escreva("Valor total é:" , soma,"\n")
+        
+            pare
+           
+            caso contrario:
+            escreva("Opção Invalida!")
+        }
+
+        escreva("\n")
